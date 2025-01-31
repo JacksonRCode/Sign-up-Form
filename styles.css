@@ -193,8 +193,12 @@ fieldset {
   font-size: 14px;
 }
 
-input[type="password"]:invalid {
+input[type="password"]:focus:invalid {
   border: solid 1px red;
+}
+
+input[type="password"]:valid {
+  border: solid 1px green;
 }
 
 input:focus {
@@ -206,6 +210,7 @@ input:focus {
 .form-row label {
   font-size: 10px;
   font-weight: bold;
+  margin-bottom: 4px;
 }
 
 div.button-container {
@@ -225,6 +230,16 @@ button[type="submit"] {
   font-weight: bold;
 
   box-shadow: 1px 1px 4px lightgrey;
+
+  transition: background-color 0.3 ease-in-out, transform 0.1s;
+}
+
+button[type="submit"]:hover {
+  background-color: #4b5c3b;
+}
+
+button[type="submit"]:active {
+  transform: scale(0.98);
 }
 
 p.login {
