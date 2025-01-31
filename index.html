@@ -26,8 +26,39 @@
         You <em>know</em> you want to.
       </p>
     </div>
-    <form action="" method="post"></form>
-    <div class="button-container"></div>
+    <form action="" method="post">
+      <legend>Let's do this!</legend>
+      <fieldset>
+        <div class="form-row">
+          <label for="fName">FIRST NAME</label>
+          <input type="text" id = "fName" name="fName" required>
+        </div>
+        <div class="form-row">
+          <label for="lName">LAST NAME</label>
+          <input type="text" id="lName" name="lName" required>
+        </div>
+        <div class="form-row">
+          <label for="mail">EMAIL</label>
+          <input type="email" id="mail" name="mail" required>
+        </div>
+        <div class="form-row">
+          <label for="pNum">PHONE NUMBER</label>
+          <input type="tel" id="pNum" name="pNum" required>
+        </div>
+        <div class="form-row">
+          <label for="pWord">PASSWORD</label>
+          <input type="password" id="pWord" name="pWord" required>
+        </div>
+        <div class="form-row">
+          <label for="conf">CONFIRM PASSWORD</label>
+          <input type="password" id="conf" required>
+        </div>
+      </fieldset>
+    </form>
+    <div class="button-container">
+      <button type="submit">Create Account</button>
+      <p class="login">Already have an account? <a>Log in</a></p>
+    </div>
   </div>
 </body>
 </html>
